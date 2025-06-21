@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Share Tech Mono', monospace;
+  height: 100vh;
+  color: #0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #0ff;
+  box-shadow: 0 0 25px #0ff, 0 0 60px #00f;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f0f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #f0f;
+}
+
+#display {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0f0;
+  text-shadow: 0 0 8px #0f0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.buttons button {
+  flex: 1 1 45%;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  color: #0ff;
+  background: transparent;
+  border: 1px solid #0ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-shadow: 0 0 4px #0ff;
+}
+
+.buttons button:hover {
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 12px #0ff;
+}
+
+#laps {
+  list-style: none;
+  margin-top: 25px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 10px;
+  color: #fff;
+}
+
+#laps li {
+  padding: 8px;
+  margin: 4px 0;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #0ff;
+}
